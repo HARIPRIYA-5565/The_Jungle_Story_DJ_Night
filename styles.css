@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f2e16;
+  color: #fdfdfd;
+  line-height: 1.5;
+}
+
+/* Full-screen top image */
+
+.hero-top {
+  width: 100%;
+  height: 100vh;        /* full viewport height */
+  overflow: hidden;
+}
+
+.hero-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* cover area without distortion */
+  display: block;
+}
+
+/* Content section */
+
+.section {
+  max-width: 1000px;
+  margin: 1.8rem auto;
+  padding: 0 1.25rem;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #ffe9b0;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #fefefe;
+}
+
+/* Highlights cards */
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #16381d;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  color: #ffe688;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card ul {
+  list-style: disc;
+  margin-left: 1.2rem;
+  font-size: 0.95rem;
+}
+
+/* Price box */
+
+.price-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: #123119;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.price-main {
+  text-align: center;
+}
+
+.price-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #ffe9b0;
+  margin-bottom: 0.3rem;
+}
+
+.price-amount {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price-note {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.date-place {
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.date-place span {
+  display: block;
+}
+
+/* CTA and contact */
+
+.cta-wrap {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn-main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.7rem;
+  border-radius: 999px;
+  border: none;
+  background: #25d366;
+  color: #04230e;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn-main:hover {
+  background: #1ebe5a;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-main span.icon {
+  font-size: 1.2rem;
+}
+
+.contact {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  color: #ffe9b0;
+}
+
+.contact a {
+  color: #25d366;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem 0 1.5rem;
+  color: #b7c7b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 640px) {
+  .price-amount {
+    font-size: 1.6rem;
+  }
+}
